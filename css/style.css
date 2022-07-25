@@ -562,6 +562,7 @@ section {
     padding: 2rem;
   }
 }
+
 @media (max-width: 768px) {
   .header #menu-btn {
     display: inline-block;
@@ -588,6 +589,7 @@ section {
     transition: 0.2s linear;
   }
 }
+
 @media (max-width: 450px) {
   html {
     font-size: 50%;
