@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap')
 
 :root
     --orange:#ff7800
-    --green:#41bd10
-    --black:#130f40
-    --light-color:#666
+    --green:#00771a
+    --green2: #007751
+    --yellow: #f7ab32
+    --black:rgba(42, 39, 42, 1)
+    --light-color:rgba(42, 39, 42, 0.5)
     --box-shadow:0 0.5rem 1.5rem rgba(0, 0, 0, 0.1)
     --border:0.2rem solid rgba(0, 0, 0, 0.1)
     --outline:0.1rem solid rgba(0, 0, 0, 0.1)
@@ -42,7 +44,7 @@ section
     color: var(--black)
 
     span
-        background: var(--orange)
+        background: var(--green2)
         color: #fff
         display: inline-block
         padding: 0.5rem 3rem
@@ -54,14 +56,16 @@ section
     display: inline-block
     padding: 0.8rem 3rem
     font-size: 1.7rem
+    font-weight: 700
     border-radius: 0.5rem
-    border: 0.2rem solid var(--black)
-    color: var(--black)
+    border: 0.2rem solid #fff
+    color: #fff
     cursor: pointer
-    background: none
+    background: var(--green2)
 
 .btn:hover
-    background: var(--orange)
+    background: var(--green)
+    border: 0.2rem solid var(--yellow)
     color: #fff
 
 .header
@@ -78,12 +82,8 @@ section
     box-shadow: var(--box-shadow)
 
     .logo
-        font-size: 2.5rem
-        font-weight: bolder
-        color: var(--black)
-
-        i
-            color: var(--orange)
+        img
+            width: 115px
     
     .navbar   
         a
@@ -92,7 +92,7 @@ section
             color: var(--black)
             
         a:hover
-            color: var(--orange)
+            color: var(--yellow)
 
     .icons 
         div
@@ -108,7 +108,7 @@ section
             text-align: center
         
         div:hover
-            background: var(--orange)
+            background: var(--yellow)
             color: #fff
 
     #menu-btn
@@ -142,7 +142,7 @@ section
             cursor: pointer
 
         label:hover
-            color: var(--orange)
+            color: var(--yellow)
 
     .search-form.active
         right: 2rem
@@ -179,7 +179,7 @@ section
                 transform: translateY(-50%)
 
             .fa-trash:hover
-                color: var(--orange)
+                color: var(--yellow)
 
             .content
 
@@ -242,7 +242,7 @@ section
             color: var(--light-color)
 
             a
-                color: var(--orange)
+                color: var(--yellow)
                 text-decoration: underline
 
     .login-form.active
@@ -253,7 +253,7 @@ section
     display: flex
     align-items: center
     justify-content: center
-    background: url(../img/banner-bg.webp) no-repeat
+    background: url(../img/banner.jpg) no-repeat
     background-position: center
     background-size: cover
     padding-top: 17rem
@@ -266,9 +266,7 @@ section
         h3
             color: var(--black)
             font-size: 3rem
-
-            span
-                color: var(--green)
+            
         
         p
             color: var(--light-color)
@@ -337,7 +335,7 @@ section
             .stars 
                 i
                     font-size: 1.7rem
-                    color: var(--orange)
+                    color: var(--yellow)
                     padding: 0.5rem 0
 
         .box:hover
@@ -416,7 +414,7 @@ section
 
             .stars
                 i
-                    color: var(--orange)
+                    color: var(--yellow)
                     font-size: 1.7rem
 
 
@@ -459,7 +457,7 @@ section
                         font-size: 1.2rem
 
                         i
-                            color: var(--orange)
+                            color: var(--yellow)
                             padding-right: 0.5rem
 
                     a:hover
@@ -486,13 +484,11 @@ section
         gap: 1.5rem
 
         .box
-            h3
-                font-size: 2.5rem
-                color: var(--black)
+            .footer-logo
                 padding: 1rem 0
 
-                i
-                    color: var(--orange)
+                img
+                    width: 140px
             
             .links
                 display: block
@@ -501,7 +497,7 @@ section
                 padding: 1rem 0
 
                 i
-                    color: var(--orange)
+                    color: var(--yellow)
                     padding-right: 0.5rem
 
             .links:hover i
@@ -526,7 +522,7 @@ section
                     text-align: center
 
                 a:hover
-                    background: var(--orange)
+                    background: var(--yellow)
                     color: #fff
 
             .email
@@ -552,7 +548,7 @@ section
                 border-top: var(--border)
 
                 span
-                    color: var(--orange)
+                    color: var(--yellow)
 
 
 

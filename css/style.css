@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 :root {
   --orange:#ff7800;
-  --green:#41bd10;
-  --black:#130f40;
-  --light-color:#666;
+  --green:#00771a;
+  --green2: #007751;
+  --yellow: #f7ab32;
+  --black:rgba(42, 39, 42, 1);
+  --light-color:rgba(42, 39, 42, 0.5);
   --box-shadow:0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   --border:0.2rem solid rgba(0, 0, 0, 0.1);
   --outline:0.1rem solid rgba(0, 0, 0, 0.1);
@@ -46,7 +47,7 @@ section {
   color: var(--black);
 }
 .heading span {
-  background: var(--orange);
+  background: var(--green2);
   color: #fff;
   display: inline-block;
   padding: 0.5rem 3rem;
@@ -58,15 +59,17 @@ section {
   display: inline-block;
   padding: 0.8rem 3rem;
   font-size: 1.7rem;
+  font-weight: 700;
   border-radius: 0.5rem;
-  border: 0.2rem solid var(--black);
-  color: var(--black);
+  border: 0.2rem solid #fff;
+  color: #fff;
   cursor: pointer;
-  background: none;
+  background: var(--green2);
 }
 
 .btn:hover {
-  background: var(--orange);
+  background: var(--green);
+  border: 0.2rem solid var(--yellow);
   color: #fff;
 }
 
@@ -83,13 +86,8 @@ section {
   background: #fff;
   box-shadow: var(--box-shadow);
 }
-.header .logo {
-  font-size: 2.5rem;
-  font-weight: bolder;
-  color: var(--black);
-}
-.header .logo i {
-  color: var(--orange);
+.header .logo img {
+  width: 115px;
 }
 .header .navbar a {
   font-size: 1.7rem;
@@ -97,7 +95,7 @@ section {
   color: var(--black);
 }
 .header .navbar a:hover {
-  color: var(--orange);
+  color: var(--yellow);
 }
 .header .icons div {
   height: 4.5rem;
@@ -112,7 +110,7 @@ section {
   text-align: center;
 }
 .header .icons div:hover {
-  background: var(--orange);
+  background: var(--yellow);
   color: #fff;
 }
 .header #menu-btn {
@@ -146,7 +144,7 @@ section {
   cursor: pointer;
 }
 .header .search-form label:hover {
-  color: var(--orange);
+  color: var(--yellow);
 }
 .header .search-form.active {
   right: 2rem;
@@ -182,7 +180,7 @@ section {
   transform: translateY(-50%);
 }
 .header .shopping-cart .box .fa-trash:hover {
-  color: var(--orange);
+  color: var(--yellow);
 }
 .header .shopping-cart .box .content h3 {
   color: var(--black);
@@ -243,7 +241,7 @@ section {
   color: var(--light-color);
 }
 .header .login-form p a {
-  color: var(--orange);
+  color: var(--yellow);
   text-decoration: underline;
 }
 .header .login-form.active {
@@ -255,7 +253,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(../img/banner-bg.webp) no-repeat;
+  background: url(../img/banner.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   padding-top: 17rem;
@@ -268,9 +266,6 @@ section {
 .home .content h3 {
   color: var(--black);
   font-size: 3rem;
-}
-.home .content h3 span {
-  color: var(--green);
 }
 .home .content p {
   color: var(--light-color);
@@ -338,7 +333,7 @@ section {
 }
 .products .product-slider .box .stars i {
   font-size: 1.7rem;
-  color: var(--orange);
+  color: var(--yellow);
   padding: 0.5rem 0;
 }
 .products .product-slider .box:hover {
@@ -413,7 +408,7 @@ section {
   font-size: 2.2rem;
 }
 .review .review-slider .box .stars i {
-  color: var(--orange);
+  color: var(--yellow);
   font-size: 1.7rem;
 }
 .review .review-slider .box:hover {
@@ -454,7 +449,7 @@ section {
   font-size: 1.2rem;
 }
 .blogs .box-container .box .content .icons a i {
-  color: var(--orange);
+  color: var(--yellow);
   padding-right: 0.5rem;
 }
 .blogs .box-container .box .content .icons a:hover {
@@ -481,13 +476,11 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1.5rem;
 }
-.footer .box-container .box h3 {
-  font-size: 2.5rem;
-  color: var(--black);
+.footer .box-container .box .footer-logo {
   padding: 1rem 0;
 }
-.footer .box-container .box h3 i {
-  color: var(--orange);
+.footer .box-container .box .footer-logo img {
+  width: 140px;
 }
 .footer .box-container .box .links {
   display: block;
@@ -496,7 +489,7 @@ section {
   padding: 1rem 0;
 }
 .footer .box-container .box .links i {
-  color: var(--orange);
+  color: var(--yellow);
   padding-right: 0.5rem;
 }
 .footer .box-container .box .links:hover i {
@@ -520,7 +513,7 @@ section {
   text-align: center;
 }
 .footer .box-container .box .share a:hover {
-  background: var(--orange);
+  background: var(--yellow);
   color: #fff;
 }
 .footer .box-container .box .email {
@@ -546,7 +539,7 @@ section {
   border-top: var(--border);
 }
 .footer .credito span {
-  color: var(--orange);
+  color: var(--yellow);
 }
 
 @media (max-width: 991px) {
@@ -562,7 +555,6 @@ section {
     padding: 2rem;
   }
 }
-
 @media (max-width: 768px) {
   .header #menu-btn {
     display: inline-block;
@@ -589,7 +581,6 @@ section {
     transition: 0.2s linear;
   }
 }
-
 @media (max-width: 450px) {
   html {
     font-size: 50%;
